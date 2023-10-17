@@ -2115,6 +2115,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "mpl-token-auth-rules"
+version = "1.4.3-debridge.0"
+source = "git+ssh://git@github.com/debridge-finance/mpl-token-auth-rules.git#31c79a35fe89397b1b3ceb6df76a4575907a28dd"
+dependencies = [
+ "borsh 0.9.3",
+ "bytemuck",
+ "mpl-token-metadata-context-derive 0.2.1",
+ "num-derive",
+ "num-traits",
+ "rmp-serde",
+ "serde",
+ "shank 0.0.11",
+ "solana-program",
+ "solana-zk-token-sdk",
+ "thiserror",
+]
+
+[[package]]
 name = "mpl-token-metadata"
 version = "1.13.2-beta.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2122,7 +2140,7 @@ checksum = "2b6cb247b58f6969d1c97288a5c859f571cdb730904aca99194708e9c21a2d13"
 dependencies = [
  "arrayref",
  "borsh 0.9.3",
- "mpl-token-auth-rules",
+ "mpl-token-auth-rules 1.4.3-beta.1",
  "mpl-token-metadata-context-derive 1.13.2-beta.1",
  "mpl-utils 0.2.0",
  "num-derive",
@@ -5072,7 +5090,7 @@ dependencies = [
  "arrayref",
  "async-trait",
  "borsh 0.9.3",
- "mpl-token-auth-rules",
+ "mpl-token-auth-rules 1.4.3-debridge.0",
  "mpl-token-metadata-context-derive 0.3.0",
  "mpl-utils 0.2.0",
  "num-derive",
