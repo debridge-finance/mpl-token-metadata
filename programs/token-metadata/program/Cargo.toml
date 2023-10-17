@@ -30,7 +30,8 @@ thiserror = "1.0"
 
 [dependencies.mpl-token-auth-rules]
 git = "ssh://git@github.com/debridge-finance/mpl-token-auth-rules.git"
-version = "=1.4.3-debridge.0"
+version = "=1.4.3-debridge.1"
+branch = "main"
 features = ["no-entrypoint"]
 
 [dev-dependencies]
